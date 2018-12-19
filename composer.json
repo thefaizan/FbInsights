@@ -1,7 +1,7 @@
 {
     "name": "smarthub/fbinsights",
     "description": ":Get facebook fanpages insights",
-    "license": "license",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Faizan Afzal",
@@ -9,7 +9,7 @@
             "homepage": "www.stallyons.com"
         }
     ],
-    "homepage": "https://github.com/smarthub/fbinsights",
+    "homepage": "https://github.com/thefaizan/FbInsights",
     "keywords": ["Laravel", "FbInsights"],
     "require": {
         "illuminate/support": "~5",
