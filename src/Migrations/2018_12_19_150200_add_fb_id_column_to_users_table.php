@@ -16,6 +16,10 @@ class AddFbIdColumnToUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             
             $table->string('fb_id')->nullable();
+            $table->string('name')->nullable()->change();
+            $table->string('email')->nullable()->change();
+            $table->string('password')->nullable()->change();
+
             $table->index(['fb_id']);
             
         });
