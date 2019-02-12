@@ -13,7 +13,7 @@ class CreatePagesInfoTable extends Migration
      */
     public function up()
     {
-        Schema::create('pages_info', function (Blueprint $table) {
+        Schema::create('fbinsights_pages_info', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('page_name')->nullable();
@@ -33,6 +33,6 @@ class CreatePagesInfoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pages_info');
+        Schema::dropIfExists('fbinsights_pages_info');
     }
 }

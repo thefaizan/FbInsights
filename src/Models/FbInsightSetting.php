@@ -4,9 +4,9 @@ namespace SmartHub\FbInsights\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PageInfo extends Model
+class FbInsightSetting extends Model
 {
-    protected $table = "fbinsights_pages_info";
+    protected $table = "fbinsighs_settings";
 
     /**
      * The attributes that are mass assignable.
@@ -14,7 +14,7 @@ class PageInfo extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'page_name', 'page_id', 'page_category', 'page_access_token', 'page_insights'
+        'meta_key', 'page_insights'
     ];
 
     /**
