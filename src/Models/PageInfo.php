@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PageInfo extends Model
 {
-    protected $table = "fbinsights_pages_info";
+    protected $table = "fbinsights.pages_info";
 
     /**
      * The attributes that are mass assignable.

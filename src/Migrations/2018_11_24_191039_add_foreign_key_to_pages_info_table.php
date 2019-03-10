@@ -13,7 +13,7 @@ class AddForeignKeyToPagesInfoTable extends Migration
      */
     public function up()
     {
-        Schema::table('fbinsights_pages_info', function (Blueprint $table) {
+        Schema::table('fbinsights.pages_info', function (Blueprint $table) {
              $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
@@ -25,7 +25,7 @@ class AddForeignKeyToPagesInfoTable extends Migration
      */
     public function down()
     {
-        Schema::table('fbinsights_pages_info', function (Blueprint $table) {
+        Schema::table('fbinsights.pages_info', function (Blueprint $table) {
             $table->dropForeign(['user_id']);
         });
     }

@@ -13,7 +13,7 @@ class CreateFbPagePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fbinsights_page_posts', function (Blueprint $table) {
+        Schema::create('fbinsights.page_posts', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('page_id')->nullable();             
@@ -33,6 +33,6 @@ class CreateFbPagePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fbinsights_page_posts');
+        Schema::dropIfExists('fbinsights.page_posts');
     }
 }

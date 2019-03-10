@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class FbPagePost extends Model
 {
-    protected $table = "fbinsights_page_posts";
+    protected $table = "fbinsights.page_posts";
 
     /**
      * The attributes that are mass assignable.

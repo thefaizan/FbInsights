@@ -13,7 +13,7 @@ class CreateFbSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fbinsights_settings', function (Blueprint $table) {
+        Schema::create('fbinsights.settings', function (Blueprint $table) {
             $table->increments('id');
             $table->string('meta_key')->unique();
             $table->longText('page_insights')->nullable();
@@ -28,6 +28,6 @@ class CreateFbSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fbinsights_settings');
+        Schema::dropIfExists('fbinsights.settings');
     }
 }

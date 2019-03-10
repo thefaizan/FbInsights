@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class FbInsightSetting extends Model
 {
-    protected $table = "fbinsighs_settings";
+    protected $table = "fbinsights.settings";
 
     /**
      * The attributes that are mass assignable.
